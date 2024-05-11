@@ -1,3 +1,11 @@
+:root {
+    --search-image: url("./images/magnify.svg");
+    --notifications-image: url("./images/bell-outline.svg");
+    --favorite-image: url("./images/star-plus-outline.svg");
+    --watch-image: url("./images/eye-plus-outline.svg");
+    --clone-image: url("./images/source-fork.svg");
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -148,4 +156,43 @@ body {
     grid-template-columns: 1fr 20px 20px;
     justify-items: end;
     gap: 20px;
+}
+
+button.icon {
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: white;
+    border-style: none;
+}
+
+button.icon:hover {
+    background-color: lightgray;
+}
+
+button.icon:active {
+    background-color: gray;
+}
+
+button.search {
+    background-image: var(--search-image);
+}
+
+button.notifications {
+    background-image: var(--notifications-image);
+}
+
+button.favorite {
+    background-image: var(--favorite-image);
+}
+
+button.watch {
+    background-image: var(--watch-image);
+}
+
+button.clone {
+    background-image: var(--clone-image);
 }
