@@ -1,0 +1,11 @@
+.page-container {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 5fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-row: 1 / -1; 
+}
