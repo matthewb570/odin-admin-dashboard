@@ -87,3 +87,22 @@ body {
     justify-items: end;
     align-items: center;
 }
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.projects,
+.announcements,
+.trending {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 5px;
+}
