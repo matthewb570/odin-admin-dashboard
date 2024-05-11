@@ -4,6 +4,16 @@
     --favorite-image: url("./images/star-plus-outline.svg");
     --watch-image: url("./images/eye-plus-outline.svg");
     --clone-image: url("./images/source-fork.svg");
+    --home-image: url("./images/home.svg");
+    --profile-image: url("./images/card-account-details-outline.svg");
+    --messages-image: url("./images/message.svg");
+    --history-image: url("./images/clock-time-three.svg");
+    --tasks-image: url("./images/note-multiple.svg");
+    --communities-image: url("./images/account-group.svg");
+    --settings-image: url("./images/cog.svg");
+    --support-image: url("./images/help-box.svg");
+    --privacy-image: url("./images/shield-check.svg");
+    --dashboard-image: url("./images/collage.svg");
 }
 
 body {
@@ -195,4 +205,51 @@ button.watch {
 
 button.clone {
     background-image: var(--clone-image);
+}
+
+div.icon {
+    mask-repeat: no-repeat;
+    background-color: black;
+}
+
+div.icon.home {
+    mask-image: var(--home-image);
+}
+
+div.icon.profile {
+    mask-image: var(--profile-image);
+}
+
+div.icon.messages {
+    mask-image: var(--messages-image);
+}
+
+div.icon.history {
+    mask-image: var(--history-image);
+}
+
+div.icon.tasks {
+    mask-image: var(--tasks-image)
+}
+
+div.icon.communities {
+    mask-image: var(--communities-image);
+}
+
+div.icon.settings {
+    mask-image: var(--settings-image);
+}
+
+div.icon.support {
+    mask-image: var(--support-image);
+}
+
+div.icon.privacy {
+    mask-image: var(--privacy-image);
+}
+
+div.icon.dashboard {
+    /* height: 50px; */
+    /* width: 50px; */
+    mask-image: var(--dashboard-image);
 }
