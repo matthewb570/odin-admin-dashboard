@@ -41,3 +41,49 @@ body {
     grid-auto-rows: max-content;
     gap: 20px;
 }
+
+.main-header {
+    padding-top: 20px;
+    padding-right: 20px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: start;
+    gap: 20px;
+}
+
+.account {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    justify-items: end;
+    align-items: start;
+    gap: 20px;
+}
+
+.welcome {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 50px 1fr;
+}
+
+.welcome .profile-picture {
+    grid-row: 1 / -1;
+    align-self: center;
+}
+
+.welcome .welcome-message {
+    align-self: end;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
+    align-items: center;
+}
