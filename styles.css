@@ -106,3 +106,13 @@ body {
     grid-template-rows: auto 1fr;
     gap: 5px;
 }
+
+.announcement-list {
+    display: grid;
+    grid-auto-rows: 1fr;
+}
+
+.announcement {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
