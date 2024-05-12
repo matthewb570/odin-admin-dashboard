@@ -15,6 +15,8 @@
     --privacy-image: url("./images/shield-check.svg");
     --dashboard-image: url("./images/collage.svg");
 
+    --standard-box-shadow: rgb(156, 156, 156) 1px 1px 5px;
+
     font-family: 'Roboto', sans-serif;
 }
 
@@ -29,6 +31,8 @@ body {
     grid-template-columns: 1fr 5fr;
     width: 100vw;
     height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .sidebar {
@@ -37,9 +41,6 @@ body {
     display: grid;
     grid-auto-rows: max-content;
     gap: 50px;
-
-    padding-top: 20px;
-    padding-left: 20px;
 }
 
 .sidebar .title {
@@ -63,9 +64,6 @@ body {
 }
 
 .main-header {
-    padding-top: 20px;
-    padding-right: 20px;
-
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -111,6 +109,7 @@ body {
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 20px;
 }
 
 .info {
@@ -124,18 +123,47 @@ body {
 .trending {
     display: grid;
     grid-template-rows: max-content 1fr;
-    gap: 5px;
+    gap: 20px;
 }
 
 .announcement-list,
 .trending-list {
     display: grid;
-    grid-auto-rows: 1fr;
+    grid-auto-rows: max-content;
+
+    border-radius: 10px;
+    box-shadow: var(--standard-box-shadow);
+    padding: 30px;
 }
 
 .announcement {
     display: grid;
     grid-template-rows: auto 1fr;
+    gap: 5px;
+
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: lightgray;
+
+    padding: 20px 0px;
+}
+
+.announcement:first-child {
+    padding-top: 0px;
+}
+
+.announcement:last-child {
+    border-bottom-style: none;
+    padding-bottom: 0;
+}
+
+.announcement .title {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.announcement .message {
+    font-size: 0.9rem;
 }
 
 .trending-item {
@@ -152,16 +180,13 @@ body {
 
 .card-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: 250px;
     gap: 20px;
 
     box-sizing: border-box;
     min-height: 100%;
     height: 0;
-    padding: 20px;
-    overflow: hidden;
-    overflow-y: auto;
 }
 
 .card {
@@ -169,8 +194,8 @@ body {
     grid-template-rows: max-content 1fr max-content;
     gap: 10px;
 
-    box-shadow: rgb(156, 156, 156) 1px 1px 5px;
-    padding: 20px;
+    box-shadow: var(--standard-box-shadow);
+    padding: 30px;
     border-radius: 10px;
     
     border-left-style: solid;
