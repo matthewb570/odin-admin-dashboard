@@ -105,8 +105,8 @@ body {
 .welcome {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 50px 1fr;
-    gap: 5px;
+    grid-template-columns: max-content 1fr;
+    column-gap: 20px;
 }
 
 .welcome .profile-picture {
@@ -203,9 +203,10 @@ body {
 
 .trending-item {
     display: grid;
-    grid-template-columns: 20px 1fr;
+    grid-template-columns: max-content 1fr;
     grid-template-rows: repeat(2, max-content);
-    column-gap: 30px;
+    column-gap: 20px;
+    row-gap: 5px;
 }
 
 .trending-item .profile-picture {
@@ -402,4 +403,18 @@ a:active,
 a:visited {
     text-decoration: none;
     color: inherit;
+}
+
+.trending-item .username {
+    align-self: end;
+}
+
+.profile-picture {
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
 }
