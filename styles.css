@@ -43,28 +43,37 @@ body {
     grid-auto-rows: max-content;
     gap: 50px;
     
-    background-color: skyblue; /* TODO: Replace this color */
+    background-color: rgb(80, 170, 255);
     padding: 30px;
+    color: white;
 }
 
 .sidebar .title {
     display: grid;
-    grid-template-columns: 20px 1fr;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
     gap: 20px;
+
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .function-links {
     display: grid;
-    grid-template-columns: 20px 1fr;
+    grid-template-columns: 50px 1fr;
     grid-auto-rows: max-content;
     gap: 20px;
+
+    font-size: 1.2rem;
 }
 
 .support-links {
     display: grid;
-    grid-template-columns: 20px 1fr;
+    grid-template-columns: 50px 1fr;
     grid-auto-rows: max-content;
     gap: 20px;
+
+    font-size: 1.2rem;
 }
 
 .main-header {
@@ -286,7 +295,8 @@ button.clone {
 
 div.icon {
     mask-repeat: no-repeat;
-    background-color: black;
+    background-color: white;
+    mask-position: center;
 }
 
 div.icon.home {
@@ -326,8 +336,8 @@ div.icon.privacy {
 }
 
 div.icon.dashboard {
-    /* height: 50px; */
-    /* width: 50px; */
+    height: 50px;
+    width: 50px;
     mask-image: var(--dashboard-image);
 }
 
@@ -377,4 +387,11 @@ button.user {
 .header {
     font-size: 1.3rem;
     font-weight: 700;
+}
+
+a,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: inherit;
 }
