@@ -197,16 +197,24 @@ body {
     color: var(--secondary-text-color);
 }
 
+.trending-list {
+    gap: 30px;
+}
+
 .trending-item {
     display: grid;
     grid-template-columns: 20px 1fr;
     grid-template-rows: repeat(2, max-content);
-    column-gap: 15px;
+    column-gap: 30px;
 }
 
 .trending-item .profile-picture {
     grid-row: 1 / -1;
     align-self: center;
+}
+
+.trending-item .project-name {
+    color: var(--secondary-text-color);
 }
 
 .card-list {
