@@ -1,19 +1,19 @@
 :root {
-    --search-image: url("./images/magnify.svg");
-    --notifications-image: url("./images/bell-outline.svg");
-    --favorite-image: url("./images/star-plus-outline.svg");
-    --watch-image: url("./images/eye-plus-outline.svg");
-    --clone-image: url("./images/source-fork.svg");
-    --home-image: url("./images/home.svg");
-    --profile-image: url("./images/card-account-details-outline.svg");
-    --messages-image: url("./images/message.svg");
-    --history-image: url("./images/clock-time-three.svg");
-    --tasks-image: url("./images/note-multiple.svg");
-    --communities-image: url("./images/account-group.svg");
-    --settings-image: url("./images/cog.svg");
-    --support-image: url("./images/help-box.svg");
-    --privacy-image: url("./images/shield-check.svg");
-    --dashboard-image: url("./images/collage.svg");
+    --search-image: url("./images/icons/magnify.svg");
+    --notifications-image: url("./images/icons/bell-outline.svg");
+    --favorite-image: url("./images/icons/star-plus-outline.svg");
+    --watch-image: url("./images/icons/eye-plus-outline.svg");
+    --clone-image: url("./images/icons/source-fork.svg");
+    --home-image: url("./images/icons/home.svg");
+    --profile-image: url("./images/icons/card-account-details-outline.svg");
+    --messages-image: url("./images/icons/message.svg");
+    --history-image: url("./images/icons/clock-time-three.svg");
+    --tasks-image: url("./images/icons/note-multiple.svg");
+    --communities-image: url("./images/icons/account-group.svg");
+    --settings-image: url("./images/icons/cog.svg");
+    --support-image: url("./images/icons/help-box.svg");
+    --privacy-image: url("./images/icons/shield-check.svg");
+    --dashboard-image: url("./images/icons/collage.svg");
 
     --standard-box-shadow: rgb(156, 156, 156) 1px 1px 5px;
 
