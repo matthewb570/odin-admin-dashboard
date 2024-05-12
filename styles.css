@@ -48,7 +48,7 @@ body {
     gap: 50px;
     
     background-color: var(--accent-color);
-    padding: 30px;
+    padding: 20px;
     color: var(--background-accent-color-light);
 }
 
@@ -86,7 +86,7 @@ body {
     grid-template-rows: max-content max-content;
     gap: 20px;
 
-    padding: 30px;
+    padding: 20px;
     box-shadow: var(--standard-box-shadow);
     background-color: var(--background-accent-color-light);
 }
@@ -116,6 +116,10 @@ body {
 .welcome .profile-picture {
     grid-row: 1 / -1;
     align-self: center;
+
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
 }
 
 .welcome .welcome-message {
@@ -141,7 +145,7 @@ body {
     grid-template-columns: 3fr 1fr;
     gap: 20px;
     
-    padding: 30px;
+    padding: 30px 20px 20px 20px;
 }
 
 .info {
@@ -406,9 +410,9 @@ a:visited {
 }
 
 .profile-picture {
-    height: 70px;
-    width: 70px;
-    border-radius: 35px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
     object-fit: cover;
     border-style: solid;
     border-width: 1px;
